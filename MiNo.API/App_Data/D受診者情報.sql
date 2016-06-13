@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[D受診者情報]
+(
+  患者番号      VARCHAR(15) not null,
+  漢字氏名      VARCHAR(40),
+  かな氏名      VARCHAR(80),
+  イニシャル     VARCHAR(80),
+  生年月日      DATE,
+  性別        TINYINT,
+  血液型abo    TINYINT,
+  血液型rh     TINYINT,
+  郵便番号      VARCHAR(10),
+  住所1       VARCHAR(80),
+  住所2       VARCHAR(80),
+  連絡先電話番号   VARCHAR(20),
+  自宅電話番号    VARCHAR(20),
+  携帯電話番号    VARCHAR(20),
+  ｆａｘ番号     VARCHAR(20),
+  電子メールアドレス VARCHAR(200),
+  メモ1       VARCHAR(400),
+  メモ2       VARCHAR(400),
+  マイナンバー    VARCHAR(20),
+  担当医no     SMALLINT,
+  最終更新日付    DATE,
+  出産予定日     DATE
+)
