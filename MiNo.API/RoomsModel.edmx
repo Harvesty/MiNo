@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MiNoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="D受診データ">
+          <Key>
+            <PropertyRef Name="orderno" />
+          </Key>
+          <Property Name="orderno" Type="int" Nullable="false" />
+          <Property Name="書込日時" Type="date" />
+          <Property Name="患者番号" Type="varchar" MaxLength="15" />
+          <Property Name="漢字氏名" Type="varchar" MaxLength="40" />
+          <Property Name="かな氏名" Type="varchar" MaxLength="80" />
+          <Property Name="イニシャル" Type="varchar" MaxLength="80" />
+          <Property Name="生年月日" Type="date" />
+          <Property Name="性別" Type="tinyint" />
+          <Property Name="血液型abo" Type="tinyint" />
+          <Property Name="血液型rh" Type="tinyint" />
+          <Property Name="郵便番号" Type="varchar" MaxLength="10" />
+          <Property Name="住所1" Type="varchar" MaxLength="80" />
+          <Property Name="住所2" Type="varchar" MaxLength="80" />
+          <Property Name="連絡先電話番号" Type="varchar" MaxLength="20" />
+          <Property Name="自宅電話番号" Type="varchar" MaxLength="20" />
+          <Property Name="携帯電話番号" Type="varchar" MaxLength="20" />
+          <Property Name="ｆａｘ番号" Type="varchar" MaxLength="20" />
+          <Property Name="電子メールアドレス" Type="varchar" MaxLength="200" />
+          <Property Name="メモ1" Type="varchar" MaxLength="400" />
+          <Property Name="メモ2" Type="varchar" MaxLength="400" />
+          <Property Name="マイナンバー" Type="varchar" MaxLength="20" />
+          <Property Name="担当医" Type="smallint" />
+          <Property Name="性別子1" Type="tinyint" />
+          <Property Name="性別子2" Type="tinyint" />
+          <Property Name="病室状態1" Type="varchar" MaxLength="20" />
+          <Property Name="病室状態2" Type="varchar" MaxLength="20" />
+          <Property Name="病室no" Type="smallint" />
+          <Property Name="入院日" Type="date" />
+          <Property Name="退院日" Type="date" />
+          <Property Name="分娩日" Type="date" />
+          <Property Name="特記事項1" Type="varchar" MaxLength="100" />
+          <Property Name="特記事項2" Type="varchar" MaxLength="100" />
+          <Property Name="病室希望1" Type="varchar" MaxLength="100" />
+          <Property Name="病室希望2" Type="varchar" MaxLength="100" />
+          <Property Name="アレルギ" Type="varchar" MaxLength="100" />
+          <Property Name="flg1" Type="tinyint" />
+          <Property Name="flg2" Type="tinyint" />
+          <Property Name="flg3" Type="tinyint" />
+          <Property Name="flg4" Type="tinyint" />
+          <Property Name="flg5" Type="tinyint" />
+          <Property Name="flg6" Type="tinyint" />
+          <Property Name="flg7" Type="tinyint" />
+          <Property Name="flg8" Type="tinyint" />
+          <Property Name="flg9" Type="tinyint" />
+          <Property Name="flg10" Type="tinyint" />
+          <Property Name="option1" Type="tinyint" />
+          <Property Name="option2" Type="tinyint" />
+          <Property Name="option3" Type="tinyint" />
+          <Property Name="option4" Type="tinyint" />
+          <Property Name="option5" Type="tinyint" />
+          <Property Name="option6" Type="tinyint" />
+          <Property Name="option7" Type="tinyint" />
+          <Property Name="option8" Type="tinyint" />
+          <Property Name="option9" Type="tinyint" />
+          <Property Name="option10" Type="tinyint" />
+          <Property Name="備考1" Type="varchar" MaxLength="1000" />
+          <Property Name="備考2" Type="varchar" MaxLength="1000" />
+          <Property Name="備考3" Type="varchar" MaxLength="1000" />
+          <Property Name="備考4" Type="varchar" MaxLength="1000" />
+          <Property Name="備考5" Type="varchar" MaxLength="1000" />
+          <Property Name="備考6" Type="varchar" MaxLength="1000" />
+          <Property Name="備考7" Type="varchar" MaxLength="1000" />
+          <Property Name="備考8" Type="varchar" MaxLength="1000" />
+          <Property Name="備考9" Type="varchar" MaxLength="1000" />
+          <Property Name="備考10" Type="varchar" MaxLength="1000" />
+          <Property Name="rsv_cha1" Type="varchar" MaxLength="400" />
+          <Property Name="rsv_cha2" Type="varchar" MaxLength="400" />
+          <Property Name="rsv_cha3" Type="varchar" MaxLength="400" />
+          <Property Name="rsv_cha4" Type="varchar" MaxLength="400" />
+          <Property Name="rsv_cha5" Type="varchar" MaxLength="400" />
+          <Property Name="rsv_cha6" Type="varchar" MaxLength="400" />
+          <Property Name="rsv_cha7" Type="varchar" MaxLength="400" />
+          <Property Name="rsv_cha8" Type="varchar" MaxLength="400" />
+          <Property Name="rsv_cha9" Type="varchar" MaxLength="400" />
+          <Property Name="rsv_cha10" Type="varchar" MaxLength="400" />
+          <Property Name="rsv_num1" Type="bigint" />
+          <Property Name="rsv_num2" Type="bigint" />
+          <Property Name="rsv_num3" Type="bigint" />
+          <Property Name="rsv_num4" Type="bigint" />
+          <Property Name="rsv_num5" Type="bigint" />
+          <Property Name="rsv_num6" Type="bigint" />
+          <Property Name="rsv_num7" Type="bigint" />
+          <Property Name="rsv_num8" Type="bigint" />
+          <Property Name="rsv_num9" Type="bigint" />
+          <Property Name="rsv_num10" Type="bigint" />
+          <Property Name="大人食1" Type="smallint" />
+          <Property Name="子供食1" Type="smallint" />
+          <Property Name="大人食2" Type="smallint" />
+          <Property Name="子供食2" Type="smallint" />
+          <Property Name="大人食3" Type="smallint" />
+          <Property Name="子供食3" Type="smallint" />
+          <Property Name="出産予定日履歴用" Type="datetime" />
+          <Property Name="重要情報更新日時" Type="datetime" />
+          <Property Name="トリガー実行フラグ" Type="tinyint" />
+        </EntityType>
+        <EntityType Name="D受診データ追加食">
+          <Key>
+            <PropertyRef Name="患者番号" />
+            <PropertyRef Name="配膳日" />
+          </Key>
+          <Property Name="患者番号" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="配膳日" Type="date" Nullable="false" />
+          <Property Name="大人食1" Type="tinyint" />
+          <Property Name="子供食1" Type="tinyint" />
+          <Property Name="大人食2" Type="tinyint" />
+          <Property Name="子供食2" Type="tinyint" />
+          <Property Name="大人食3" Type="tinyint" />
+          <Property Name="子供食3" Type="tinyint" />
+        </EntityType>
+        <EntityType Name="D受診者情報">
+          <Key>
+            <PropertyRef Name="患者番号" />
+          </Key>
+          <Property Name="患者番号" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="漢字氏名" Type="varchar" MaxLength="40" />
+          <Property Name="かな氏名" Type="varchar" MaxLength="80" />
+          <Property Name="イニシャル" Type="varchar" MaxLength="80" />
+          <Property Name="生年月日" Type="date" />
+          <Property Name="性別" Type="tinyint" />
+          <Property Name="血液型abo" Type="tinyint" />
+          <Property Name="血液型rh" Type="tinyint" />
+          <Property Name="郵便番号" Type="varchar" MaxLength="10" />
+          <Property Name="住所1" Type="varchar" MaxLength="80" />
+          <Property Name="住所2" Type="varchar" MaxLength="80" />
+          <Property Name="連絡先電話番号" Type="varchar" MaxLength="20" />
+          <Property Name="自宅電話番号" Type="varchar" MaxLength="20" />
+          <Property Name="携帯電話番号" Type="varchar" MaxLength="20" />
+          <Property Name="ｆａｘ番号" Type="varchar" MaxLength="20" />
+          <Property Name="電子メールアドレス" Type="varchar" MaxLength="200" />
+          <Property Name="メモ1" Type="varchar" MaxLength="400" />
+          <Property Name="メモ2" Type="varchar" MaxLength="400" />
+          <Property Name="マイナンバー" Type="varchar" MaxLength="20" />
+          <Property Name="担当医no" Type="smallint" />
+          <Property Name="最終更新日付" Type="date" />
+          <Property Name="出産予定日" Type="date" />
+        </EntityType>
+        <EntityType Name="M性別">
+          <Key>
+            <PropertyRef Name="性別" />
+          </Key>
+          <Property Name="性別" Type="tinyint" Nullable="false" />
+          <Property Name="入力コード1" Type="varchar" MaxLength="1" />
+          <Property Name="入力コード2" Type="varchar" MaxLength="1" />
+          <Property Name="入力コード3" Type="varchar" MaxLength="1" />
+          <Property Name="略称" Type="varchar" MaxLength="4" />
+          <Property Name="名称" Type="varchar" MaxLength="10" />
+          <Property Name="ホストコード1" Type="varchar" MaxLength="20" />
+          <Property Name="ホストコード2" Type="varchar" MaxLength="20" />
+          <Property Name="ホストコード3" Type="varchar" MaxLength="20" />
+          <Property Name="予備数字1" Type="float" />
+          <Property Name="予備数字2" Type="float" />
+          <Property Name="予備文字1" Type="varchar" MaxLength="20" />
+          <Property Name="予備文字2" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="M担当医">
+          <Key>
+            <PropertyRef Name="担当医no" />
+          </Key>
+          <Property Name="担当医no" Type="smallint" Nullable="false" />
+          <Property Name="漢字略称" Type="varchar" MaxLength="20" />
+          <Property Name="カナ名称" Type="varchar" MaxLength="80" />
+          <Property Name="漢字正式名称" Type="varchar" MaxLength="80" />
+          <Property Name="色コード" Type="varchar" MaxLength="20" />
+          <Property Name="ホストコード1" Type="varchar" MaxLength="80" />
+          <Property Name="ホストコード2" Type="varchar" MaxLength="80" />
+          <Property Name="ホストコード3" Type="varchar" MaxLength="80" />
+        </EntityType>
+        <EntityType Name="M病室">
+          <Key>
+            <PropertyRef Name="病室no" />
+          </Key>
+          <Property Name="病室no" Type="smallint" Nullable="false" />
+          <Property Name="病室名" Type="varchar" MaxLength="20" />
+          <Property Name="使用flg" Type="bit" />
+          <Property Name="詰所印刷flg" Type="bit" />
+          <Property Name="ra印刷flg" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="MiNoModelStoreContainer">
+          <EntitySet Name="D受診データ" EntityType="Self.D受診データ" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="D受診データ追加食" EntityType="Self.D受診データ追加食" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="D受診者情報" EntityType="Self.D受診者情報" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="M性別" EntityType="Self.M性別" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="M担当医" EntityType="Self.M担当医" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="M病室" EntityType="Self.M病室" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MiNoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="D受診データ">
+          <Key>
+            <PropertyRef Name="orderno" />
+          </Key>
+          <Property Name="orderno" Type="Int32" Nullable="false" />
+          <Property Name="書込日時" Type="DateTime" Precision="0" />
+          <Property Name="患者番号" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="漢字氏名" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="かな氏名" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="イニシャル" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="生年月日" Type="DateTime" Precision="0" />
+          <Property Name="性別" Type="Byte" />
+          <Property Name="血液型abo" Type="Byte" />
+          <Property Name="血液型rh" Type="Byte" />
+          <Property Name="郵便番号" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="住所1" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="住所2" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="連絡先電話番号" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="自宅電話番号" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="携帯電話番号" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ｆａｘ番号" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="電子メールアドレス" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="メモ1" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="メモ2" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="マイナンバー" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="担当医" Type="Int16" />
+          <Property Name="性別子1" Type="Byte" />
+          <Property Name="性別子2" Type="Byte" />
+          <Property Name="病室状態1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="病室状態2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="病室no" Type="Int16" />
+          <Property Name="入院日" Type="DateTime" Precision="0" />
+          <Property Name="退院日" Type="DateTime" Precision="0" />
+          <Property Name="分娩日" Type="DateTime" Precision="0" />
+          <Property Name="特記事項1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="特記事項2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="病室希望1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="病室希望2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="アレルギ" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="flg1" Type="Byte" />
+          <Property Name="flg2" Type="Byte" />
+          <Property Name="flg3" Type="Byte" />
+          <Property Name="flg4" Type="Byte" />
+          <Property Name="flg5" Type="Byte" />
+          <Property Name="flg6" Type="Byte" />
+          <Property Name="flg7" Type="Byte" />
+          <Property Name="flg8" Type="Byte" />
+          <Property Name="flg9" Type="Byte" />
+          <Property Name="flg10" Type="Byte" />
+          <Property Name="option1" Type="Byte" />
+          <Property Name="option2" Type="Byte" />
+          <Property Name="option3" Type="Byte" />
+          <Property Name="option4" Type="Byte" />
+          <Property Name="option5" Type="Byte" />
+          <Property Name="option6" Type="Byte" />
+          <Property Name="option7" Type="Byte" />
+          <Property Name="option8" Type="Byte" />
+          <Property Name="option9" Type="Byte" />
+          <Property Name="option10" Type="Byte" />
+          <Property Name="備考1" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="備考2" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="備考3" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="備考4" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="備考5" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="備考6" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="備考7" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="備考8" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="備考9" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="備考10" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="rsv_cha1" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="rsv_cha2" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="rsv_cha3" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="rsv_cha4" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="rsv_cha5" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="rsv_cha6" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="rsv_cha7" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="rsv_cha8" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="rsv_cha9" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="rsv_cha10" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="rsv_num1" Type="Int64" />
+          <Property Name="rsv_num2" Type="Int64" />
+          <Property Name="rsv_num3" Type="Int64" />
+          <Property Name="rsv_num4" Type="Int64" />
+          <Property Name="rsv_num5" Type="Int64" />
+          <Property Name="rsv_num6" Type="Int64" />
+          <Property Name="rsv_num7" Type="Int64" />
+          <Property Name="rsv_num8" Type="Int64" />
+          <Property Name="rsv_num9" Type="Int64" />
+          <Property Name="rsv_num10" Type="Int64" />
+          <Property Name="大人食1" Type="Int16" />
+          <Property Name="子供食1" Type="Int16" />
+          <Property Name="大人食2" Type="Int16" />
+          <Property Name="子供食2" Type="Int16" />
+          <Property Name="大人食3" Type="Int16" />
+          <Property Name="子供食3" Type="Int16" />
+          <Property Name="出産予定日履歴用" Type="DateTime" Precision="3" />
+          <Property Name="重要情報更新日時" Type="DateTime" Precision="3" />
+          <Property Name="トリガー実行フラグ" Type="Byte" />
+        </EntityType>
+        <EntityType Name="D受診データ追加食">
+          <Key>
+            <PropertyRef Name="患者番号" />
+            <PropertyRef Name="配膳日" />
+          </Key>
+          <Property Name="患者番号" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="配膳日" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="大人食1" Type="Byte" />
+          <Property Name="子供食1" Type="Byte" />
+          <Property Name="大人食2" Type="Byte" />
+          <Property Name="子供食2" Type="Byte" />
+          <Property Name="大人食3" Type="Byte" />
+          <Property Name="子供食3" Type="Byte" />
+        </EntityType>
+        <EntityType Name="D受診者情報">
+          <Key>
+            <PropertyRef Name="患者番号" />
+          </Key>
+          <Property Name="患者番号" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="漢字氏名" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="かな氏名" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="イニシャル" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="生年月日" Type="DateTime" Precision="0" />
+          <Property Name="性別" Type="Byte" />
+          <Property Name="血液型abo" Type="Byte" />
+          <Property Name="血液型rh" Type="Byte" />
+          <Property Name="郵便番号" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="住所1" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="住所2" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="連絡先電話番号" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="自宅電話番号" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="携帯電話番号" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ｆａｘ番号" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="電子メールアドレス" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="メモ1" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="メモ2" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="マイナンバー" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="担当医no" Type="Int16" />
+          <Property Name="最終更新日付" Type="DateTime" Precision="0" />
+          <Property Name="出産予定日" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="M性別">
+          <Key>
+            <PropertyRef Name="性別" />
+          </Key>
+          <Property Name="性別" Type="Byte" Nullable="false" />
+          <Property Name="入力コード1" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="入力コード2" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="入力コード3" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="略称" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="名称" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ホストコード1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ホストコード2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ホストコード3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="予備数字1" Type="Double" />
+          <Property Name="予備数字2" Type="Double" />
+          <Property Name="予備文字1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="予備文字2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="M担当医">
+          <Key>
+            <PropertyRef Name="担当医no" />
+          </Key>
+          <Property Name="担当医no" Type="Int16" Nullable="false" />
+          <Property Name="漢字略称" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="カナ名称" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="漢字正式名称" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="色コード" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ホストコード1" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ホストコード2" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ホストコード3" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="M病室">
+          <Key>
+            <PropertyRef Name="病室no" />
+          </Key>
+          <Property Name="病室no" Type="Int16" Nullable="false" />
+          <Property Name="病室名" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="使用flg" Type="Boolean" />
+          <Property Name="詰所印刷flg" Type="Boolean" />
+          <Property Name="ra印刷flg" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="MiNoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="D受診データ" EntityType="Self.D受診データ" />
+          <EntitySet Name="D受診データ追加食" EntityType="Self.D受診データ追加食" />
+          <EntitySet Name="D受診者情報" EntityType="Self.D受診者情報" />
+          <EntitySet Name="M性別" EntityType="Self.M性別" />
+          <EntitySet Name="M担当医" EntityType="Self.M担当医" />
+          <EntitySet Name="M病室" EntityType="Self.M病室" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MiNoModelStoreContainer" CdmEntityContainer="MiNoEntities">
+          <EntitySetMapping Name="D受診データ">
+            <EntityTypeMapping TypeName="MiNoModel.D受診データ">
+              <MappingFragment StoreEntitySet="D受診データ">
+                <ScalarProperty Name="orderno" ColumnName="orderno" />
+                <ScalarProperty Name="書込日時" ColumnName="書込日時" />
+                <ScalarProperty Name="患者番号" ColumnName="患者番号" />
+                <ScalarProperty Name="漢字氏名" ColumnName="漢字氏名" />
+                <ScalarProperty Name="かな氏名" ColumnName="かな氏名" />
+                <ScalarProperty Name="イニシャル" ColumnName="イニシャル" />
+                <ScalarProperty Name="生年月日" ColumnName="生年月日" />
+                <ScalarProperty Name="性別" ColumnName="性別" />
+                <ScalarProperty Name="血液型abo" ColumnName="血液型abo" />
+                <ScalarProperty Name="血液型rh" ColumnName="血液型rh" />
+                <ScalarProperty Name="郵便番号" ColumnName="郵便番号" />
+                <ScalarProperty Name="住所1" ColumnName="住所1" />
+                <ScalarProperty Name="住所2" ColumnName="住所2" />
+                <ScalarProperty Name="連絡先電話番号" ColumnName="連絡先電話番号" />
+                <ScalarProperty Name="自宅電話番号" ColumnName="自宅電話番号" />
+                <ScalarProperty Name="携帯電話番号" ColumnName="携帯電話番号" />
+                <ScalarProperty Name="ｆａｘ番号" ColumnName="ｆａｘ番号" />
+                <ScalarProperty Name="電子メールアドレス" ColumnName="電子メールアドレス" />
+                <ScalarProperty Name="メモ1" ColumnName="メモ1" />
+                <ScalarProperty Name="メモ2" ColumnName="メモ2" />
+                <ScalarProperty Name="マイナンバー" ColumnName="マイナンバー" />
+                <ScalarProperty Name="担当医" ColumnName="担当医" />
+                <ScalarProperty Name="性別子1" ColumnName="性別子1" />
+                <ScalarProperty Name="性別子2" ColumnName="性別子2" />
+                <ScalarProperty Name="病室状態1" ColumnName="病室状態1" />
+                <ScalarProperty Name="病室状態2" ColumnName="病室状態2" />
+                <ScalarProperty Name="病室no" ColumnName="病室no" />
+                <ScalarProperty Name="入院日" ColumnName="入院日" />
+                <ScalarProperty Name="退院日" ColumnName="退院日" />
+                <ScalarProperty Name="分娩日" ColumnName="分娩日" />
+                <ScalarProperty Name="特記事項1" ColumnName="特記事項1" />
+                <ScalarProperty Name="特記事項2" ColumnName="特記事項2" />
+                <ScalarProperty Name="病室希望1" ColumnName="病室希望1" />
+                <ScalarProperty Name="病室希望2" ColumnName="病室希望2" />
+                <ScalarProperty Name="アレルギ" ColumnName="アレルギ" />
+                <ScalarProperty Name="flg1" ColumnName="flg1" />
+                <ScalarProperty Name="flg2" ColumnName="flg2" />
+                <ScalarProperty Name="flg3" ColumnName="flg3" />
+                <ScalarProperty Name="flg4" ColumnName="flg4" />
+                <ScalarProperty Name="flg5" ColumnName="flg5" />
+                <ScalarProperty Name="flg6" ColumnName="flg6" />
+                <ScalarProperty Name="flg7" ColumnName="flg7" />
+                <ScalarProperty Name="flg8" ColumnName="flg8" />
+                <ScalarProperty Name="flg9" ColumnName="flg9" />
+                <ScalarProperty Name="flg10" ColumnName="flg10" />
+                <ScalarProperty Name="option1" ColumnName="option1" />
+                <ScalarProperty Name="option2" ColumnName="option2" />
+                <ScalarProperty Name="option3" ColumnName="option3" />
+                <ScalarProperty Name="option4" ColumnName="option4" />
+                <ScalarProperty Name="option5" ColumnName="option5" />
+                <ScalarProperty Name="option6" ColumnName="option6" />
+                <ScalarProperty Name="option7" ColumnName="option7" />
+                <ScalarProperty Name="option8" ColumnName="option8" />
+                <ScalarProperty Name="option9" ColumnName="option9" />
+                <ScalarProperty Name="option10" ColumnName="option10" />
+                <ScalarProperty Name="備考1" ColumnName="備考1" />
+                <ScalarProperty Name="備考2" ColumnName="備考2" />
+                <ScalarProperty Name="備考3" ColumnName="備考3" />
+                <ScalarProperty Name="備考4" ColumnName="備考4" />
+                <ScalarProperty Name="備考5" ColumnName="備考5" />
+                <ScalarProperty Name="備考6" ColumnName="備考6" />
+                <ScalarProperty Name="備考7" ColumnName="備考7" />
+                <ScalarProperty Name="備考8" ColumnName="備考8" />
+                <ScalarProperty Name="備考9" ColumnName="備考9" />
+                <ScalarProperty Name="備考10" ColumnName="備考10" />
+                <ScalarProperty Name="rsv_cha1" ColumnName="rsv_cha1" />
+                <ScalarProperty Name="rsv_cha2" ColumnName="rsv_cha2" />
+                <ScalarProperty Name="rsv_cha3" ColumnName="rsv_cha3" />
+                <ScalarProperty Name="rsv_cha4" ColumnName="rsv_cha4" />
+                <ScalarProperty Name="rsv_cha5" ColumnName="rsv_cha5" />
+                <ScalarProperty Name="rsv_cha6" ColumnName="rsv_cha6" />
+                <ScalarProperty Name="rsv_cha7" ColumnName="rsv_cha7" />
+                <ScalarProperty Name="rsv_cha8" ColumnName="rsv_cha8" />
+                <ScalarProperty Name="rsv_cha9" ColumnName="rsv_cha9" />
+                <ScalarProperty Name="rsv_cha10" ColumnName="rsv_cha10" />
+                <ScalarProperty Name="rsv_num1" ColumnName="rsv_num1" />
+                <ScalarProperty Name="rsv_num2" ColumnName="rsv_num2" />
+                <ScalarProperty Name="rsv_num3" ColumnName="rsv_num3" />
+                <ScalarProperty Name="rsv_num4" ColumnName="rsv_num4" />
+                <ScalarProperty Name="rsv_num5" ColumnName="rsv_num5" />
+                <ScalarProperty Name="rsv_num6" ColumnName="rsv_num6" />
+                <ScalarProperty Name="rsv_num7" ColumnName="rsv_num7" />
+                <ScalarProperty Name="rsv_num8" ColumnName="rsv_num8" />
+                <ScalarProperty Name="rsv_num9" ColumnName="rsv_num9" />
+                <ScalarProperty Name="rsv_num10" ColumnName="rsv_num10" />
+                <ScalarProperty Name="大人食1" ColumnName="大人食1" />
+                <ScalarProperty Name="子供食1" ColumnName="子供食1" />
+                <ScalarProperty Name="大人食2" ColumnName="大人食2" />
+                <ScalarProperty Name="子供食2" ColumnName="子供食2" />
+                <ScalarProperty Name="大人食3" ColumnName="大人食3" />
+                <ScalarProperty Name="子供食3" ColumnName="子供食3" />
+                <ScalarProperty Name="出産予定日履歴用" ColumnName="出産予定日履歴用" />
+                <ScalarProperty Name="重要情報更新日時" ColumnName="重要情報更新日時" />
+                <ScalarProperty Name="トリガー実行フラグ" ColumnName="トリガー実行フラグ" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="D受診データ追加食">
+            <EntityTypeMapping TypeName="MiNoModel.D受診データ追加食">
+              <MappingFragment StoreEntitySet="D受診データ追加食">
+                <ScalarProperty Name="患者番号" ColumnName="患者番号" />
+                <ScalarProperty Name="配膳日" ColumnName="配膳日" />
+                <ScalarProperty Name="大人食1" ColumnName="大人食1" />
+                <ScalarProperty Name="子供食1" ColumnName="子供食1" />
+                <ScalarProperty Name="大人食2" ColumnName="大人食2" />
+                <ScalarProperty Name="子供食2" ColumnName="子供食2" />
+                <ScalarProperty Name="大人食3" ColumnName="大人食3" />
+                <ScalarProperty Name="子供食3" ColumnName="子供食3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="D受診者情報">
+            <EntityTypeMapping TypeName="MiNoModel.D受診者情報">
+              <MappingFragment StoreEntitySet="D受診者情報">
+                <ScalarProperty Name="患者番号" ColumnName="患者番号" />
+                <ScalarProperty Name="漢字氏名" ColumnName="漢字氏名" />
+                <ScalarProperty Name="かな氏名" ColumnName="かな氏名" />
+                <ScalarProperty Name="イニシャル" ColumnName="イニシャル" />
+                <ScalarProperty Name="生年月日" ColumnName="生年月日" />
+                <ScalarProperty Name="性別" ColumnName="性別" />
+                <ScalarProperty Name="血液型abo" ColumnName="血液型abo" />
+                <ScalarProperty Name="血液型rh" ColumnName="血液型rh" />
+                <ScalarProperty Name="郵便番号" ColumnName="郵便番号" />
+                <ScalarProperty Name="住所1" ColumnName="住所1" />
+                <ScalarProperty Name="住所2" ColumnName="住所2" />
+                <ScalarProperty Name="連絡先電話番号" ColumnName="連絡先電話番号" />
+                <ScalarProperty Name="自宅電話番号" ColumnName="自宅電話番号" />
+                <ScalarProperty Name="携帯電話番号" ColumnName="携帯電話番号" />
+                <ScalarProperty Name="ｆａｘ番号" ColumnName="ｆａｘ番号" />
+                <ScalarProperty Name="電子メールアドレス" ColumnName="電子メールアドレス" />
+                <ScalarProperty Name="メモ1" ColumnName="メモ1" />
+                <ScalarProperty Name="メモ2" ColumnName="メモ2" />
+                <ScalarProperty Name="マイナンバー" ColumnName="マイナンバー" />
+                <ScalarProperty Name="担当医no" ColumnName="担当医no" />
+                <ScalarProperty Name="最終更新日付" ColumnName="最終更新日付" />
+                <ScalarProperty Name="出産予定日" ColumnName="出産予定日" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="M性別">
+            <EntityTypeMapping TypeName="MiNoModel.M性別">
+              <MappingFragment StoreEntitySet="M性別">
+                <ScalarProperty Name="性別" ColumnName="性別" />
+                <ScalarProperty Name="入力コード1" ColumnName="入力コード1" />
+                <ScalarProperty Name="入力コード2" ColumnName="入力コード2" />
+                <ScalarProperty Name="入力コード3" ColumnName="入力コード3" />
+                <ScalarProperty Name="略称" ColumnName="略称" />
+                <ScalarProperty Name="名称" ColumnName="名称" />
+                <ScalarProperty Name="ホストコード1" ColumnName="ホストコード1" />
+                <ScalarProperty Name="ホストコード2" ColumnName="ホストコード2" />
+                <ScalarProperty Name="ホストコード3" ColumnName="ホストコード3" />
+                <ScalarProperty Name="予備数字1" ColumnName="予備数字1" />
+                <ScalarProperty Name="予備数字2" ColumnName="予備数字2" />
+                <ScalarProperty Name="予備文字1" ColumnName="予備文字1" />
+                <ScalarProperty Name="予備文字2" ColumnName="予備文字2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="M担当医">
+            <EntityTypeMapping TypeName="MiNoModel.M担当医">
+              <MappingFragment StoreEntitySet="M担当医">
+                <ScalarProperty Name="担当医no" ColumnName="担当医no" />
+                <ScalarProperty Name="漢字略称" ColumnName="漢字略称" />
+                <ScalarProperty Name="カナ名称" ColumnName="カナ名称" />
+                <ScalarProperty Name="漢字正式名称" ColumnName="漢字正式名称" />
+                <ScalarProperty Name="色コード" ColumnName="色コード" />
+                <ScalarProperty Name="ホストコード1" ColumnName="ホストコード1" />
+                <ScalarProperty Name="ホストコード2" ColumnName="ホストコード2" />
+                <ScalarProperty Name="ホストコード3" ColumnName="ホストコード3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="M病室">
+            <EntityTypeMapping TypeName="MiNoModel.M病室">
+              <MappingFragment StoreEntitySet="M病室">
+                <ScalarProperty Name="病室no" ColumnName="病室no" />
+                <ScalarProperty Name="病室名" ColumnName="病室名" />
+                <ScalarProperty Name="使用flg" ColumnName="使用flg" />
+                <ScalarProperty Name="詰所印刷flg" ColumnName="詰所印刷flg" />
+                <ScalarProperty Name="ra印刷flg" ColumnName="ra印刷flg" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

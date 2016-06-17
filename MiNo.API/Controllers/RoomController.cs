@@ -11,7 +11,10 @@ namespace MiNo.API.Controllers
     {
         public object Get()
         {
-            return MiNoDB.GetData("select t.* from D受診データ t");
+            var enthos = new MiNoEntities();
+            var patient = enthos.D受診データ.Where(p => p.orderno == 917);
+            return patient;
+            //return MiNoDB.GetData("select t.* from D受診データ t");
             //return new
             //{
             //    Name = "Alice",

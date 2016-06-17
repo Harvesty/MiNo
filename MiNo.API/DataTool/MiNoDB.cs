@@ -12,9 +12,5 @@ namespace MiNo.API
         {
             return SqlHelper.ExecuteDataset(SqlHelper.GetConnection(), CommandType.Text, strSql);
         }
-        public static DataSet ChangeData(string strSql)
-        {
-            return SqlHelper.ExecuteDataset(SqlHelper.GetConnection(), CommandType.Text, strSql);
-        }
     }
 }
