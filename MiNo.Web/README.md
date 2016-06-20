@@ -1,4 +1,4 @@
-# mino
+# web
 
 > A Vue.js project
 
